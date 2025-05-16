@@ -7,6 +7,6 @@
 [![Requires Fabric API](https://user-images.githubusercontent.com/76814120/123727642-e9100000-d8cc-11eb-9760-3d59f62820fc.png)
 ](https://www.curseforge.com/minecraft/mc-mods/fabric-api)
 ## Guide
-1. Download the mod
+1. [Download the mod](https://modrinth.com/mod/toggleable-coordinates-hud)
 2. Modify the keybind in options (default is H)
 3. You're done!
