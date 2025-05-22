@@ -10,3 +10,15 @@
 1. [Download the mod](https://modrinth.com/mod/toggleable-coordinates-hud)
 2. Modify the keybind in options (default is H)
 3. You're done!
+
+You can modify the position of the hud by doing /changecoordshudpos! Here are the alignments for the different gui scales:
+
+ALIGNMENTS FOR GUI SCALES: 
+
+AUTO/4: TOP LEFT = 5 5, TOP RIGHT = 370 5, BOTTOM LEFT = 5 260, BOTTOM RIGHT = 370 260
+
+GUI SCALE 1: TOP LEFT = 5 5, TOP RIGHT = 1805 5, BOTTOM LEFT = 5 1070, BOTTOM RIGHT = 1805 1070
+
+GUI SCALE 2: TOP LEFT = 5 5, TOP RIGHT = 850 5, BOTTOM LEFT = 5 530, BOTTOM RIGHT = 850 530
+
+GUI SCALE 3: TOP LEFT = 5 5, TOP RIGHT = 530 5, BOTTOM LEFT = 5 350, BOTTOM RIGHT = 530 350
