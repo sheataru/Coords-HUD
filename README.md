@@ -11,14 +11,12 @@
 2. Modify the keybind in options (default is H)
 3. You're done!
 
-You can modify the position of the hud by doing /changecoordshudpos! Here are the alignments for the different gui scales:
+You can modify the position of the hud by doing /changecoordshudpos x y! Here are the alignments for the different gui scales:
 
-ALIGNMENTS FOR GUI SCALES: 
+Auto/4: Top Left = 5 5, Top Right = 370 5, Bottom Left = 5 260, Bottom Right = 370 260
 
-AUTO/4: TOP LEFT = 5 5, TOP RIGHT = 370 5, BOTTOM LEFT = 5 260, BOTTOM RIGHT = 370 260
+GUI Scale 1: Top Left = 5 5, Top Right = 1805 5, Bottom Left = 5 1070, Bottom Right = 1805 1070
 
-GUI SCALE 1: TOP LEFT = 5 5, TOP RIGHT = 1805 5, BOTTOM LEFT = 5 1070, BOTTOM RIGHT = 1805 1070
+GUI Scale 2: Top Left = 5 5, Top Right = 850 5, Bottom Left = 5 530, Bottom Right = 850 530
 
-GUI SCALE 2: TOP LEFT = 5 5, TOP RIGHT = 850 5, BOTTOM LEFT = 5 530, BOTTOM RIGHT = 850 530
-
-GUI SCALE 3: TOP LEFT = 5 5, TOP RIGHT = 530 5, BOTTOM LEFT = 5 350, BOTTOM RIGHT = 530 350
+GUI Scale 3: Top Left = 5 5, Top Right = 530 5, Bottom Left = 5 350, Bottom Right = 530 350
