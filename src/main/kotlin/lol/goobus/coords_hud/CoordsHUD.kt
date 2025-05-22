@@ -1,5 +1,6 @@
 package lol.goobus.coords_hud
 
+import com.mojang.brigadier.arguments.FloatArgumentType
 import it.unimi.dsi.fastutil.floats.Float2ReferenceAVLTreeMap
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents
@@ -12,12 +13,16 @@ import net.minecraft.client.util.math.MatrixStack
 import net.minecraft.text.Text
 import org.joml.Matrix4f
 import org.lwjgl.glfw.GLFW
+import lol.goobus.coords_hud.ConfigCommands
 
-class CoordsHUD : ModInitializer {
+object CoordsHUD : ModInitializer {
     lateinit var toggleKey: KeyBinding
     var showCoords = true
+    var xpos: Float = 5f
+    var ypos: Float = 5f
 
     override fun onInitialize() {
+        ConfigCommands.register()
         toggleKey = KeyBindingHelper.registerKeyBinding(
             KeyBinding("Toggle Coords HUD", GLFW.GLFW_KEY_H, "Coords HUD")
         )
@@ -44,17 +49,17 @@ class CoordsHUD : ModInitializer {
             val matrix = matrices.matrices.peek().positionMatrix
 
             textRenderer.draw(
-                coords,         // Text
-                5f,                 // x position
-                5f,                 // y position
-                0xFFFFFF,           // color
-                false,              // shadow
+                coords,
+                xpos,
+                ypos,
+                0xFFFFFF,
+                false,
                 matrix,
-                vertexConsumers,    // VertexConsumerProvider
+                vertexConsumers,
                 TextRenderer.TextLayerType.NORMAL,
-                0,                  // background color (0 = none)
-                15728880            // light value (full brightness = 0xF000F0)
+                0,
+                15728880
             )
-
+        }
     }
-}}
+}
